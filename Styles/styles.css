@@ -11,15 +11,15 @@ body {font-family: 'Montserrat', sans-serif;
     background-color: #fafafa;
     box-shadow: 10px rgba(0, 0, 0, 0.1);
 }
-.main-content{
+.main-content {
     background-color: #FFFFFF;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
-    padding: 105px; 90px;
+    padding: 105px 90px;
 }
 .About{
     margin-bottom: 40px;
 }
-.about-position{
+.about-position {
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -27,7 +27,7 @@ body {font-family: 'Montserrat', sans-serif;
     color: #000;
     margin-bottom: 20px;
 }
-.about-name{
+.about-name {
     font-style: normal;
     font-weight: bold;
     font-size: 45px;
@@ -35,7 +35,7 @@ body {font-family: 'Montserrat', sans-serif;
     color: #000;
     margin-bottom: 25px;
 }
-.about-description{
+.about-description {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -43,10 +43,10 @@ body {font-family: 'Montserrat', sans-serif;
     color: #595959;
     width: 400px;
 }
-.Projects{
+.Projects {
     margin-bottom: 50px;
 }
-.title{
+.title {
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
@@ -54,14 +54,14 @@ body {font-family: 'Montserrat', sans-serif;
     color: #000;
     margin-bottom: 10px;
 }
-.projects-item{
+.projects-item {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 24px;
     color: #000000;
 }
-.project,.project-link{
+.project,.project-link {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -71,18 +71,16 @@ body {font-family: 'Montserrat', sans-serif;
 .project-link{
     margin-left: 10px;
 }
-.project-bracket{
+.project-bracket {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
     color: #000000;
 }
-.projects-list{
+.projects-list {
     padding: 0;
     margin-left: 15px;
-}
-.work{
 }
 .work-position{
     font-style: normal;
@@ -99,7 +97,7 @@ body {font-family: 'Montserrat', sans-serif;
     line-height: 20px;
     color: #FB6D3A;
 }
-.period{
+.period {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -107,14 +105,14 @@ body {font-family: 'Montserrat', sans-serif;
     color: #A8A8A8;
     margin-bottom: 10px;
 }
-.line{
+.line {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
     color: #000000;
 }
-.work-list{
+.work-list {
     padding: 0;
     margin-left: 15px;
 }
@@ -128,9 +126,9 @@ body {font-family: 'Montserrat', sans-serif;
 .Education{
 background-color: rgb(255, 255, 255);
 }
-.Education-class{
+.Education-class {
     padding: 0;
-    margin-left: 15px
+    margin-left: 15px;
     margin-top: 40px;
     font-style: normal;
     font-weight: 700;
@@ -138,19 +136,19 @@ background-color: rgb(255, 255, 255);
     line-height: 27px;
     color: #000;
 }
-.National-class{
+.National-class {
     padding: 0;
-    margin-left: 15px
+    margin-left: 15px;
     margin-top: 10px;
     font-style: normal;
     font-weight: 700;
-    ont-size: 16px;
+    font-size: 16px;
     line-height: 20px;
     color: #FB6D3A;
 }
-.Management-class{
+.Management-class {
     padding: 0;
-    margin-left: 15px
+    margin-left: 15px;
     margin-top: 10px;
     font-style: normal;
     font-weight: 700;
@@ -158,9 +156,9 @@ background-color: rgb(255, 255, 255);
     line-height: 17px;
     color: #000;
 }
-.September-class{
+.September-class {
     padding: 0;
-    margin-left: 15px
+    margin-left: 15px;
     margin-top: 10px;
     font-style: normal;
     font-weight: 400;
@@ -168,23 +166,87 @@ background-color: rgb(255, 255, 255);
     line-height: 15px;
     color: #A8A8A8;
 }
-.line-down{
+.line-down {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
     color: #000000;
 }
-.sidebar{
+.sidebar {
     background-color: #1e2939;
     padding-top: 30px;
     width: 370px;
 }
-.photo{
+.photo {
     width: 370px;
     margin-bottom: 5px;
 }
-.sidebar-title{
+/* Hover icon Efect */
+.hover-effect-btn {
+    position: relative;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 370px;
+    height: 270px;
+    background: rgba(0, 0, 0, 0.0);
+    /* Настройка цвета и прозрачности для блока с заголовком */
+    transition: background 0.5s ease;
+}
+
+.hover-effect-btn:hover .overlay {
+    display: block;
+    background: rgba(0, 0, 0, 0.9);
+    /* Настройка цвета и прозрачности для блока с заголовком при наведении */
+}
+
+.button {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 65%;
+    /* Отступ сверху */
+    text-align: center;
+    opacity: 0;
+    transition: opacity .35s ease;
+}
+
+.button a {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    background: #1e2939;
+    margin: 10px;
+    border-radius: 30%;
+    text-align: center;
+}
+.button a i {
+    color: #0088cc;
+    font-size: 40px;
+    margin-top: 10px;
+}
+.button a:hover {
+    background: #0088cc;
+    transition: 1s;
+}
+
+.button a:hover i {
+    color: #f1f1f1;
+    transition: 1s;
+    transform: scale(1.4);
+}
+
+.hover-effect-btn:hover .button {
+    opacity: 1;
+}
+
+
+.sidebar-title {
     color: #FFFFFF;
     font-style: normal;
     font-weight: bold;
@@ -195,10 +257,10 @@ background-color: rgb(255, 255, 255);
 .contacts-sb,.contacts-tc,.contacts-sk{
     margin-left: 50px;
 }
-.contacts-sb{
+.contacts-sb {
     margin: 50px;
 }
-.contact_type{
+.contact_type {
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -206,7 +268,7 @@ background-color: rgb(255, 255, 255);
     color: #FFFFFF;
     margin-right: 10px;
 }
-.contact-link{
+.contact-link {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -214,30 +276,30 @@ background-color: rgb(255, 255, 255);
     color: #FFFFFF;
     opacity: 0.5;
 }
-.tach-skils-list{
+.tach-skils-list {
     color: #FFFFFF;
     padding: 0;
     margin-left: 25px;
 }
-.tech-skills-item{
+.tech-skills-item {
     color: #FB6D3A;
 }
-.tech-skills-text{
+.tech-skills-text {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     color: #FFFFFF;
 }
-.Soft-Skills-list{
+.Soft-Skills-list {
     color: #FFFFFF;
     padding: 0;
     margin-left: 25px;
 }
-.Soft-Skills-item{
+.Soft-Skills-item {
     color: #FB6D3A;
 }
-.Soft-Skills-text{
+.Soft-Skills-text {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
